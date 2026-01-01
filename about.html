@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About | MANIKANTH</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">🍄 MANIKANTH</div>
+  <nav>
+    <a href="index.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1>The Mushroom Mart</h1>
+    <h2>by MADRI MANIKANTH</h2>
+    <p>Fresh • Organic • Farm to Home</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="about-section">
+  <div class="about-text">
+    <h3>Our Story</h3>
+    <p>
+      The Mushroom Mart by MADRI MANIKANTH was founded with a simple vision –
+      to deliver fresh, healthy, and organically grown mushrooms directly
+      from the farm to your kitchen.
+    </p>
+    <p>
+      We believe good food begins at the source. Every mushroom we grow
+      follows sustainable farming practices, ensuring purity, nutrition,
+      and exceptional taste.
+    </p>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="value-card">
+    🌱
+    <h4>Organic Farming</h4>
+    <p>No chemicals. No shortcuts. Just natural goodness.</p>
+  </div>
+
+  <div class="value-card">
+    🍄
+    <h4>Premium Quality</h4>
+    <p>Hand-picked gourmet mushrooms with strict quality checks.</p>
+  </div>
+
+  <div class="value-card">
+    🚚
+    <h4>Fresh Delivery</h4>
+    <p>Harvested and delivered at peak freshness.</p>
+  </div>
+</section>
+
+<!-- FOUNDER NOTE -->
+<section class="founder">
+  <h3>From the Founder</h3>
+  <p>
+    “The Mushroom Mart is not just a business – it’s a commitment
+    to healthier lifestyles, sustainable agriculture, and honest food.
+    Every order supports a greener future.”
+  </p>
+  <span>— MADRI MANIKANTH</span>
+</section>
+
+<footer class="footer">
+  <p>© 2026 MANIKANTH • The Mushroom Mart by MADRI MANIKANTH</p>
+</footer>
+
+<script>
+  gsap.from(".about-hero-content", { opacity: 0, y: 50, duration: 1 });
+  gsap.from(".about-text", { opacity: 0, x: -50, duration: 1, delay: 0.3 });
+  gsap.from(".value-card", { opacity: 0, y: 40, stagger: 0.2, delay: 0.6 });
+</script>
+
+</body>
+</html>

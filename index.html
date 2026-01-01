@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MANIKANTH | Premium Mushrooms</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">🍄 MANIKANTH</div>
+  <nav>
+    <a href="index.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Fresh Gourmet Mushrooms</h1>
+  <p>Farm-fresh • Organic • Delivered fast</p>
+</section>
+
+<section class="products">
+
+  <!-- Product Card -->
+  <div class="product-card">
+    <img src="images/grey-oyster.jpeg">
+    <h3>Grey Oyster Mushroom</h3>
+    <select onchange="updatePrice(this,65)">
+      <option value="100">100 g</option>
+      <option value="250">250 g</option>
+      <option value="500">500 g</option>
+      <option value="1000">1 Kg</option>
+    </select>
+    <p class="price">₹65</p>
+    <button onclick="addToCart('Grey Oyster Mushroom',this)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/king-oyster.jpeg">
+    <h3>King Oyster Mushroom</h3>
+    <select onchange="updatePrice(this,130)">
+      <option value="100">100 g</option>
+      <option value="250">250 g</option>
+      <option value="500">500 g</option>
+      <option value="1000">1 Kg</option>
+    </select>
+    <p class="price">₹130</p>
+    <button onclick="addToCart('King Oyster Mushroom',this)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/pink-oyster.jpeg">
+    <h3>Pink Oyster Mushroom</h3>
+    <select onchange="updatePrice(this,65)">
+      <option value="100">100 g</option>
+      <option value="250">250 g</option>
+      <option value="500">500 g</option>
+      <option value="1000">1 Kg</option>
+    </select>
+    <p class="price">₹65</p>
+    <button onclick="addToCart('Pink Oyster Mushroom',this)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/elm-oyster.jpeg">
+    <h3>Elm Oyster Mushroom</h3>
+    <select onchange="updatePrice(this,80)">
+      <option value="100">100 g</option>
+      <option value="250">250 g</option>
+      <option value="500">500 g</option>
+      <option value="1000">1 Kg</option>
+    </select>
+    <p class="price">₹80</p>
+    <button onclick="addToCart('Elm Oyster Mushroom',this)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/white-oyster.jpeg">
+    <h3>White Oyster Mushroom</h3>
+    <select onchange="updatePrice(this,65)">
+      <option value="100">100 g</option>
+      <option value="250">250 g</option>
+      <option value="500">500 g</option>
+      <option value="1000">1 Kg</option>
+    </select>
+    <p class="price">₹65</p>
+    <button onclick="addToCart('White Oyster Mushroom',this)">Add to Cart</button>
+  </div>
+
+</section>
+
+<script src="js/cart.js"></script>
+<script src="js/animation.js"></script>
+<!-- Confirmation Modal -->
+<div id="confirm-modal" class="modal">
+  <div class="modal-box">
+    <h3>Add item to cart?</h3>
+    <p id="confirm-item"></p>
+    <div class="modal-actions">
+      <button class="yes-btn" onclick="confirmAdd()">Yes</button>
+      <button class="no-btn" onclick="closeModal()">No</button>
+    </div>
+  </div>
+</div>
+
+<!-- Success Popup -->
+<div id="success-popup" class="success">
+  <div class="tick">✔</div>
+  <p>Item added to cart</p>
+</div>
+
+</body>
+</html>
